@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling & JavaScript | Task 3</title>
+  <link rel="stylesheet" href="Task-3.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>Advanced Styling and JavaScript</h1>
+      <div class="timeline">
+        <span>Timeline : 9 Days</span>
+        <span class="task">TASK - 3</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Objective -->
+    <section class="objective">
+      <h2>Objective</h2>
+      <ul>
+        <li>Gain advanced skills in CSS and JavaScript for building interactive, responsive sites.</li>
+      </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+      <h2>Steps</h2>
+
+      <!-- Step 1: Responsive Design -->
+      <div class="step">
+        <h3>1. Apply Responsive Design Using Media Queries</h3>
+        <p><strong>Objective:</strong> Ensure web pages look great on mobile, tablet, and desktop.</p>
+        <p><strong>Actions:</strong> Use media queries to adjust layouts, font sizes, and other elements for different devices.</p>
+      </div>
+
+      <!-- Step 2: Interactive Quiz / Image Carousel -->
+      <div class="step">
+        <h3>2. Build an Interactive Quiz or Image Carousel Using JavaScript</h3>
+        <div class="quiz-carousel">
+          <!-- Quiz Section -->
+          <div class="quiz-section">
+            <h4>🧠 Interactive Quiz</h4>
+            <div id="quiz-container"></div>
+            <button id="submit-quiz">Submit Answers</button>
+            <div id="quiz-result"></div>
+          </div>
+
+          <!-- Carousel Section -->
+          <div class="carousel-section">
+            <h4>🖼️ Image Carousel</h4>
+            <div class="carousel">
+              <div class="carousel-inner" id="carousel-inner">
+                <img src="https://picsum.photos/600/300?random=1" alt="Slide 1" class="slide active">
+                <img src="https://picsum.photos/600/300?random=2" alt="Slide 2" class="slide">
+                <img src="https://picsum.photos/600/300?random=3" alt="Slide 3" class="slide">
+              </div>
+              <button class="carousel-btn prev"><</button>
+              <button class="carousel-btn next">></button>
+              <div class="carousel-indicators" id="indicators"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Fetch Data from API -->
+      <div class="step">
+        <h3>3. Fetch Data from an API Using JavaScript</h3>
+        <p><strong>Objective:</strong> Learn how to work with external APIs to fetch real-time data.</p>
+        <p><strong>Actions:</strong> Fetch data from a public API (e.g., weather) and display dynamically.</p>
+        <div class="api-output" id="weather-data">
+          <h4>🌤️ Current Weather (Auto-detected location)</h4>
+          <p>Loading weather data...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo">
+        <img src="https://via.placeholder.com/150x50/2E7D32/FFFFFF?text=ApexPlanet" alt="ApexPlanet Logo">
+        <p>Software Pvt Ltd</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="Task-3.js"></script>
+</body>
+</html>
